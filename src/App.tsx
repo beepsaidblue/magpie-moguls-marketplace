@@ -112,47 +112,6 @@ const App = () => {
                   <Routes>
                     <Route
                       path='/'
-                      element={(
-                        <>
-                          <TopNav />
-                          <Home
-                            candyMachineId={candyMachineId}
-                            connection={connection}
-                            txTimeout={txTimeout}
-                            rpcHost={rpcHost}
-                          />
-                        </>
-                      )}
-                    />
-                    <Route
-                      path='/marketplace/:tokenMint'
-                      element={(
-                        <>
-                          <TopNav />
-                          <SingleOrder />
-                        </>
-                      )}
-                    />
-                    <Route
-                      path='/marketplace'
-                      element={(
-                        <>
-                          <TopNav />
-                          <Marketplace />
-                        </>
-                      )}
-                    />
-                    <Route
-                      path='/sell'
-                      element={
-                        <>
-                          <TopNav />
-                          <MyCollection />
-                        </>
-                      }
-                    />
-                    <Route
-                      path='/custom-token-marketplace'
                       element={
                         <>
                           <TopNav />
@@ -161,38 +120,11 @@ const App = () => {
                       }
                     />
                     <Route
-                      path='/multi-collection-marketplace'
+                      path='/sell'
                       element={
                         <>
                           <TopNav />
-                          <MarketplaceWithFilter />
-                        </>
-                      }
-                    />
-                    <Route
-                      path='/marketplace-with-url'
-                      element={
-                        <>
-                          <TopNav />
-                          <MarketplaceWithUrl />
-                        </>
-                      }
-                    />
-                    <Route
-                      path='/multi-currency-marketplace'
-                      element={
-                        <>
-                          <TopNav showCurrencyToggle={true} />
-                          <MultiCurrencyMarketplace />
-                        </>
-                      }
-                    />
-                    <Route
-                      path='/multi-currency-sell'
-                      element={
-                        <>
-                          <TopNav showCurrencyToggle={true} />
-                          <MultiCurrencySell />
+                          <MyCollection />
                         </>
                       }
                     />

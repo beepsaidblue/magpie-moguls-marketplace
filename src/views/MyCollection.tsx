@@ -27,7 +27,14 @@ const MyCollection: React.FC = () => {
       CANDY_SHOP_CREATOR_ADDRESS,
       CANDY_SHOP_TREASURY_MINT,
       CANDY_SHOP_PROGRAM_ID,
-      NETWORK
+      NETWORK,
+      // pass additional settings param to configure shop display
+      {
+        currencySymbol: 'NEST',
+        currencyDecimals: 6,
+        priceDecimals: 2,
+        volumeDecimals: 1
+      }
     )
   )
 

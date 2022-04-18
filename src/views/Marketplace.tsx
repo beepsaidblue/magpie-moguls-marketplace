@@ -15,7 +15,7 @@ const DesContainer = styled.div`
   width: 100%;
 `
 
-const Marketplace: React.FC = () => {
+const CustomTokenMarketplace: React.FC = () => {
   const wallet = useAnchorWallet();
 
   const candyShopRef = useRef<CandyShop>(
@@ -23,7 +23,14 @@ const Marketplace: React.FC = () => {
       CANDY_SHOP_CREATOR_ADDRESS,
       CANDY_SHOP_TREASURY_MINT,
       CANDY_SHOP_PROGRAM_ID,
-      NETWORK
+      NETWORK,
+      // pass additional settings param to configure shop display
+      {
+        currencySymbol: 'NEST',
+        currencyDecimals: 6,
+        priceDecimals: 2,
+        volumeDecimals: 1
+      }
     )
   )
 
@@ -31,8 +38,8 @@ const Marketplace: React.FC = () => {
     <DesContainer>
       <Stat
         candyShop={candyShopRef.current}
-        title={'Marketplace'}
-        description={'Candy Shop is an open source on-chain protocol that empowers DAOs, NFT projects and anyone interested in creating an NFT marketplace to do so within minutes!'}
+        title={'Magpies Marketplace'}
+        description={'2222 Mischief of Magpies on Solana, bringing with them incredible utility, airdrops, and much more to innovate the NFT space'}
         style={{ paddingBottom: 50 }}
       />
       <Orders
@@ -44,4 +51,4 @@ const Marketplace: React.FC = () => {
   )
 }
 
-export default Marketplace
+export default CustomTokenMarketplace
