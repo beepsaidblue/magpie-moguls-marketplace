@@ -51,14 +51,6 @@ h3 {
 }
 
 /* Candy Shop styling overrides */
-.css-1wewypr {
-  color: black;
-}
-
-.css-1ago99h {
-  color: black;
-}
-
-.css-1lsxyx4 .candy-label {
+.candy-stat-component-container .candy-label {
   color: var(--title-text-color);
 }

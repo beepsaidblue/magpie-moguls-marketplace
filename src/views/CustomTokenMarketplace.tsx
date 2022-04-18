@@ -36,10 +36,13 @@ const CustomTokenMarketplace: React.FC = () => {
 
   return (
     <DesContainer>
+      <div style={{ marginBottom: 50 }}>
+        <img src="/banner.jpeg" alt="Magpie Moguls" width="100%" />
+      </div>
       <Stat
         candyShop={candyShopRef.current}
-        title={'Marketplace'}
-        description={'Candy Shop supports custom SPL tokens as currency. Just specify your token symbol and decimals.'}
+        title={'Magpies Marketplace'}
+        description={'Buy and sell Magpie Moguls with $NEST.'}
         style={{ paddingBottom: 50 }}
       />
       <Orders
