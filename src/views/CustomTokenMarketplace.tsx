@@ -34,6 +34,20 @@ const CustomTokenMarketplace: React.FC = () => {
     )
   )
 
+  const filters = [
+    { name: 'Bottle Caps', identifier: -2132972726 },
+    // { name: 'Diamond Coin', identifier: 1038656921 },
+    { name: 'Gold Coin', identifier: 361480341 },
+    { name: 'Gold Watch', identifier: 992781383 },
+    // { name: 'Golden Ticket #13', identifier: 1929271894 },
+    { name: 'Golden Feather', identifier: 773099312},
+    { name: 'Golden Ticket', identifier: 953453311 },
+    { name: 'Magpie Moguls', identifier: -1449267971 },
+    // { name: 'Mystery Box', identifier: -430461412 },
+    { name: 'Silver Coin', identifier: 121963542 },
+    { name: 'Story Books', identifier: -389143624 },
+  ]
+
   return (
     <DesContainer>
       <div style={{ marginBottom: 50 }}>
@@ -49,6 +63,7 @@ const CustomTokenMarketplace: React.FC = () => {
         wallet={wallet}
         candyShop={candyShopRef.current}
         walletConnectComponent={<WalletMultiButton />}
+        filters={filters}
       />
     </DesContainer>
   )
