@@ -28,8 +28,8 @@ const CustomTokenMarketplace: React.FC = () => {
       {
         currencySymbol: 'NEST',
         currencyDecimals: 6,
-        priceDecimals: 2,
-        volumeDecimals: 1
+        priceDecimals: 0,
+        volumeDecimals: 0
       }
     )
   )
