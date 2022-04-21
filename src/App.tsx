@@ -67,17 +67,17 @@ const theme = createTheme({
 // Used for a multi-currency shop
 const currencyOptions = [
   {
+    currencySymbol: 'NEST',
+    treasuryMint: 'MM7s2bggZvq2DBFyBVKBBHb9DYAo3A2WGkP6L5cPzxC',
+    currencyDecimals: 6,
+    priceDecimals: 0,
+    volumeDecimals: 0
+  },
+  {
     currencySymbol: 'SOL',
     treasuryMint: 'So11111111111111111111111111111111111111112',
     currencyDecimals: 9,
     priceDecimals: 3,
-    volumeDecimals: 1
-  },
-  {
-    currencySymbol: '56p',
-    treasuryMint: '56pdaHboK66cxRLkzkYVvFSAjfoNEETJUsrdmAYaTXMJ',
-    currencyDecimals: 9,
-    priceDecimals: 2,
     volumeDecimals: 1
   }
 ];
@@ -114,8 +114,8 @@ const App = () => {
                       path='/'
                       element={
                         <>
-                          <TopNav />
-                          <CustomTokenMarketplace />
+                          <TopNav showCurrencyToggle={true} />
+                          <MultiCurrencyMarketplace />
                         </>
                       }
                     />
@@ -123,8 +123,8 @@ const App = () => {
                       path='/sell'
                       element={
                         <>
-                          <TopNav />
-                          <MyCollection />
+                          <TopNav showCurrencyToggle={true} />
+                          <MultiCurrencySell />
                         </>
                       }
                     />
